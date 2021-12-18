@@ -17,9 +17,9 @@ final _privateConstructorUsedError = UnsupportedError(
 class _$XXXStateTearOff {
   const _$XXXStateTearOff();
 
-  _XXXState call({int hoge = ""}) {
+  _XXXState call({int count = ""}) {
     return _XXXState(
-      hoge: hoge,
+      count: count,
     );
   }
 }
@@ -29,7 +29,7 @@ const $XXXState = _$XXXStateTearOff();
 
 /// @nodoc
 mixin _$XXXState {
-  int get hoge => throw _privateConstructorUsedError;
+  int get count => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $XXXStateCopyWith<XXXState> get copyWith =>
@@ -40,7 +40,7 @@ mixin _$XXXState {
 abstract class $XXXStateCopyWith<$Res> {
   factory $XXXStateCopyWith(XXXState value, $Res Function(XXXState) then) =
       _$XXXStateCopyWithImpl<$Res>;
-  $Res call({int hoge});
+  $Res call({int count});
 }
 
 /// @nodoc
@@ -53,12 +53,12 @@ class _$XXXStateCopyWithImpl<$Res> implements $XXXStateCopyWith<$Res> {
 
   @override
   $Res call({
-    Object? hoge = freezed,
+    Object? count = freezed,
   }) {
     return _then(_value.copyWith(
-      hoge: hoge == freezed
-          ? _value.hoge
-          : hoge // ignore: cast_nullable_to_non_nullable
+      count: count == freezed
+          ? _value.count
+          : count // ignore: cast_nullable_to_non_nullable
               as int,
     ));
   }
@@ -69,7 +69,7 @@ abstract class _$XXXStateCopyWith<$Res> implements $XXXStateCopyWith<$Res> {
   factory _$XXXStateCopyWith(_XXXState value, $Res Function(_XXXState) then) =
       __$XXXStateCopyWithImpl<$Res>;
   @override
-  $Res call({int hoge});
+  $Res call({int count});
 }
 
 /// @nodoc
@@ -83,12 +83,12 @@ class __$XXXStateCopyWithImpl<$Res> extends _$XXXStateCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object? hoge = freezed,
+    Object? count = freezed,
   }) {
     return _then(_XXXState(
-      hoge: hoge == freezed
-          ? _value.hoge
-          : hoge // ignore: cast_nullable_to_non_nullable
+      count: count == freezed
+          ? _value.count
+          : count // ignore: cast_nullable_to_non_nullable
               as int,
     ));
   }
@@ -97,15 +97,15 @@ class __$XXXStateCopyWithImpl<$Res> extends _$XXXStateCopyWithImpl<$Res>
 /// @nodoc
 
 class _$_XXXState implements _XXXState {
-  const _$_XXXState({this.hoge = ""});
+  const _$_XXXState({this.count = ""});
 
   @JsonKey()
   @override
-  final int hoge;
+  final int count;
 
   @override
   String toString() {
-    return 'XXXState(hoge: $hoge)';
+    return 'XXXState(count: $count)';
   }
 
   @override
@@ -113,12 +113,12 @@ class _$_XXXState implements _XXXState {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _XXXState &&
-            const DeepCollectionEquality().equals(other.hoge, hoge));
+            const DeepCollectionEquality().equals(other.count, count));
   }
 
   @override
   int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(hoge));
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(count));
 
   @JsonKey(ignore: true)
   @override
@@ -127,10 +127,10 @@ class _$_XXXState implements _XXXState {
 }
 
 abstract class _XXXState implements XXXState {
-  const factory _XXXState({int hoge}) = _$_XXXState;
+  const factory _XXXState({int count}) = _$_XXXState;
 
   @override
-  int get hoge;
+  int get count;
   @override
   @JsonKey(ignore: true)
   _$XXXStateCopyWith<_XXXState> get copyWith =>
