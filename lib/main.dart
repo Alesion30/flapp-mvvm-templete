@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/l10n.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,6 +12,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      localizationsDelegates: L10n.localizationsDelegates,
+      supportedLocales: L10n.supportedLocales,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -34,7 +37,7 @@ class MyHomePage extends StatelessWidget {
               width: 200,
             ),
             Text(
-              'flapp',
+              L10n.of(context)!.hello,
               style: Theme.of(context).textTheme.headline4,
             ),
           ],
