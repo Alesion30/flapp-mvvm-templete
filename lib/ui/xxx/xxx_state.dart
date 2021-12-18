@@ -5,6 +5,6 @@ part 'xxx_state.freezed.dart';
 @freezed
 class XXXState with _$XXXState {
   const factory XXXState({
-    @Default("") int count,
+    @Default(0) int count,
   }) = _XXXState;
 }

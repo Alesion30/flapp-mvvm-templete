@@ -17,7 +17,7 @@ final _privateConstructorUsedError = UnsupportedError(
 class _$XXXStateTearOff {
   const _$XXXStateTearOff();
 
-  _XXXState call({int count = ""}) {
+  _XXXState call({int count = 0}) {
     return _XXXState(
       count: count,
     );
@@ -97,7 +97,7 @@ class __$XXXStateCopyWithImpl<$Res> extends _$XXXStateCopyWithImpl<$Res>
 /// @nodoc
 
 class _$_XXXState implements _XXXState {
-  const _$_XXXState({this.count = ""});
+  const _$_XXXState({this.count = 0});
 
   @JsonKey()
   @override
