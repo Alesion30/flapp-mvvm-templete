@@ -5,14 +5,14 @@ analyzer:
     implicit-casts: true
     implicit-dynamic: true
   exclude:
-    - "**/generated_plugin_registrant.dart"
-    - "**/build/**"
-    - "**/generated_*.dart"
-    - "**/*.g.dart"
-    - "**/*.freezed.dart"
-    - "**/*.gr.dart"
-    - "**/l10n*.dart"
-    - "**/*.gen.dart"
+    - '**/generated_plugin_registrant.dart'
+    - '**/build/**'
+    - '**/generated_*.dart'
+    - '**/*.g.dart'
+    - '**/*.freezed.dart'
+    - '**/*.gr.dart'
+    - '**/l10n*.dart'
+    - '**/*.gen.dart'
 
 linter:
   rules:
