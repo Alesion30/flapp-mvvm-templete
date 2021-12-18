@@ -1,0 +1,5 @@
+.dart_tool
+.fvm
+build
+ios
+android
