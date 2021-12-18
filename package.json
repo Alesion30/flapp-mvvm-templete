@@ -6,6 +6,19 @@
   "author": "Yuta Ohira <alesion90@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "husky": "^7.0.0",
+    "lint-staged": "^12.1.2",
     "prettier": "^2.5.1"
+  },
+  "scripts": {
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.dart": [
+      "fvm flutter format"
+    ],
+    "*.@(json|yaml)": [
+      "prettier --write"
+    ]
   }
 }
