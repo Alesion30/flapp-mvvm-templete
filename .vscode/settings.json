@@ -1,0 +1,17 @@
+{
+  "files.exclude": {
+    ".dart_tool": true,
+    ".idea": true,
+    "build": true,
+    "node_modules": true,
+    ".flutter-plugins": true,
+    ".flutter-plugins-dependencies": true,
+    ".metadata": true,
+    ".packages": true,
+    "flapp.iml": true,
+    "Dangerfile": true,
+    "Gemfile": true,
+    "yarn.lock": true,
+    "pubspec.lock": true
+  }
+}

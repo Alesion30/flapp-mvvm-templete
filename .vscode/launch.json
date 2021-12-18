@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "run dev",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "args": ["--dart-define=FLAVOR=dev"]
+    },
+    {
+      "name": "run dev (with Device Preview)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "args": ["--dart-define=FLAVOR=dev", "--dart-define=PREVIEW=true"]
+    },
+    {
+      "name": "run prod",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "args": ["--dart-define=FLAVOR=prod"]
+    }
+  ]
+}
