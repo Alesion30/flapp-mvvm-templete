@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:device_preview/device_preview.dart';
 import 'package:enum_to_string/enum_to_string.dart';
 import 'package:fimber/fimber.dart';
 import 'package:flapp/foundation/constants.dart';
@@ -28,7 +29,16 @@ Future<void> main() async {
   }
 
   runZonedGuarded(
-    () => runApp(const ProviderScope(child: MyApp())),
+    () => runApp(
+      ProviderScope(
+        child: DevicePreview(
+          enabled: !kReleaseMode && Constants.enablePreview,
+          builder: (context) {
+            return const MyApp();
+          },
+        ),
+      ),
+    ),
     (error, stackTrace) {
       Fimber.e(error.toString());
     },

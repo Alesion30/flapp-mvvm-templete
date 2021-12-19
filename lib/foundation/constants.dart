@@ -33,4 +33,7 @@ class Constants {
         const String.fromEnvironment('FLAVOR'),
       ) ??
       Flavor.dev;
+
+  /// Device Previewを有効化するかどうか
+  static bool get enablePreview => const bool.fromEnvironment('PREVIEW');
 }
