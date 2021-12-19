@@ -8,9 +8,6 @@
     ".flutter-plugins-dependencies": true,
     ".metadata": true,
     ".packages": true,
-    "flapp.iml": true,
-    "Dangerfile": true,
-    "Gemfile": true,
     "yarn.lock": true,
     "pubspec.lock": true
   }
