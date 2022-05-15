@@ -14,7 +14,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   intl: ^0.17.0
   flutter_svg: ^1.0.0
-  auto_route: ^3.2.0
+  auto_route: ^4.0.0
   hooks_riverpod: ^1.0.3
   flutter_hooks: ^0.18.1
   json_serializable: ^6.1.3
