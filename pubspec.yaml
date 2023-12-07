@@ -12,7 +12,7 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   cupertino_icons: ^1.0.2
-  intl: ^0.17.0
+  intl: ^0.19.0
   flutter_svg: ^1.0.0
   auto_route: ^3.2.0
   hooks_riverpod: ^1.0.3
